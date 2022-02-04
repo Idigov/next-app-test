@@ -13,7 +13,6 @@ const MyWonderfulComponent = ({ id, options, children, count, value }) => {
   const isDynamic = options?.params?.fields?.isDynamic;
   const classes = useStyles();
 
-  console.log(value);
   useEffect(() => {
     if (id && isDynamic) {
       setCounter((counter) => counter + 1);
@@ -27,7 +26,8 @@ const MyWonderfulComponent = ({ id, options, children, count, value }) => {
         <Grid item xs={12}>
           {children}
         </Grid>
-        <Grid item>{counter}</Grid>
+        <Grid item xs={12}>{counter}</Grid>
+        <Grid item xs={12}>{value}</Grid>
       </Grid>
     </>
   );
