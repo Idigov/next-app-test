@@ -26,8 +26,12 @@ const MyWonderfulComponent = ({ id, options, children, count, value }) => {
         <Grid item xs={12}>
           {children}
         </Grid>
-        <Grid item xs={12}>{counter}</Grid>
-        <Grid item xs={12}>{value}</Grid>
+        <Grid item xs={12}>
+          {counter}
+        </Grid>
+        <Grid item xs={12}>
+          {value}
+        </Grid>
       </Grid>
     </>
   );

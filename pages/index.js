@@ -15,7 +15,7 @@ export default function App({ value }) {
 }
 
 export async function getServerSideProps() {
-  console.log("Hello from SSR")
+  console.log("Hello from SSR");
   return {
     props: {
       value: "Hello from SSR",
